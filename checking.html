@@ -18,6 +18,7 @@
     </style>
 </head>
 <body>
+    <h1 onclick="mainpage()">YouTube</h1>
     <div id="main">
         <div>
     <form onsubmit="Register(event)">
@@ -135,8 +136,8 @@ try{
     });
 
     let data= await response.json();
-    console.log(data.name);
- 
+  localStorage.setItem("userdata",JSON.stringify(data));
+ var req=JSON.parse(localStorage.getItem("userdata"));
     if(data.username!==undefined){
         
         window.location.href="index.html"
@@ -147,7 +148,9 @@ catch(e){
 }
 }
 
-
+function mainpage(){
+    window.location.href="index.html";
+}
 
 
 
