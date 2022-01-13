@@ -31,6 +31,7 @@
         }
         #top{
             display: flex;
+            flex-wrap: wrap;
          
         }
         #video{
@@ -40,7 +41,13 @@
         }
         button{
             height: 25px;
-            margin-left: 5px;
+            margin-left: 1%;
+        }
+        h1,h3{
+            margin: 0px;
+        }
+        h3{
+            margin-left: 30%;
         }
     </style>
 </head>
@@ -48,7 +55,9 @@
    <div id="top">
       <h1>YouTube</h1>
     <input type="text" id="video" placeholder="Search Video">
-    <button onclick="searchVideo()">Search</button></div>
+    <button onclick="searchVideo()">Search</button>
+<h3 onclick="signup()">SignUp/Login</h3>
+</div>
  
     <h2 id="trending">Trending videos </h2>
     <div id="popular"></div>
@@ -155,5 +164,11 @@ iframe.setAttribute("allowfullscreen","true")
 popular.append(iframe);
 })
 
+}
+
+
+//------Signup Page------->
+function signup(){
+    window.location.href="checking.html";
 }
 </script>
