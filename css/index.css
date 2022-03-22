@@ -1,0 +1,53 @@
+#main{
+    display: flex;
+}
+#main div{
+    flex: 1;
+}
+form{
+    width: 20%;
+}
+
+#searchedvideos,#popular{
+    margin-left:100px ;
+    display: flex;
+    flex-wrap:wrap ;
+    grid-gap: 20px;
+}
+#video{
+    margin-left: 500px;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 250px;
+    height: 200px;
+}
+#searchvideos>div{
+    width: 250px;
+    height: 250px;
+}
+p{
+    width: 250px;
+}
+#top{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+#video{
+    height: 20px;
+    width: 200px;
+
+}
+button{
+    height: 25px;
+    margin-left: 1%;
+}
+h1,h3{
+    margin: 0px;
+}
+h3{
+    margin-left: 30%;
+}
